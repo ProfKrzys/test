@@ -1,7 +1,7 @@
 
 import requests
 
-formating = exec(requests.get("https://raw.githubusercontent.com/ProfKrzys/test/main/utils/fornatting.py").text)
+formating = exec(requests.get("https://raw.githubusercontent.com/ProfKrzys/test/main/utils/formating.py").text)
 
 color = formating.color
 
